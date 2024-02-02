@@ -1,4 +1,4 @@
-import Listing from "../models/listing.js";
+import Listing from "../models/listing.model.js";
 import { errorHandler } from "../utils/error.js";
 
 // Create a new listing
