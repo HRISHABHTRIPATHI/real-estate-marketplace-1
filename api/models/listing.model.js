@@ -1,9 +1,8 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-// Define a Mongoose schema for a listing
 const listingSchema = new mongoose.Schema(
   {
-    title: {
+    name: {
       type: String,
       required: true,
     },
@@ -47,7 +46,7 @@ const listingSchema = new mongoose.Schema(
       type: Boolean,
       required: true,
     },
-    imageURLs: {
+    imageUrls: {
       type: Array,
       required: true,
     },
@@ -59,8 +58,6 @@ const listingSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Create a Mongoose model named "Listing" based on the schema
-const Listing = mongoose.model("Listing", listingSchema);
+const Listing = mongoose.model('Listing', listingSchema);
 
-// Export the "Listing" model for use in other parts of the application
 export default Listing;
